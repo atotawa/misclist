@@ -110,6 +110,15 @@ function buildOverlay() {
   const img = document.createElement("img");
   img.id = "img";
 
+  const youtube = document.createElement("iframe");
+  youtube.id = "youtube";
+  youtube.style.width = "100%";
+  youtube.style.aspectRatio = "16 / 9";
+  youtube.style.border = "0";
+  youtube.style.display = "none";
+  youtube.setAttribute("allowfullscreen", "");
+  youtube.title = "YouTube video";
+
   const pName = document.createElement("div");
   pName.id = "pName";
   pName.className = "content-text";
@@ -124,7 +133,7 @@ function buildOverlay() {
   const pDescInner = document.createElement("p");
   pDesc.appendChild(pDescInner);
 
-  content.append(close, img, pName, pPrice, pDesc);
+  content.append(close, img, youtube, pName, pPrice, pDesc);
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
@@ -133,12 +142,12 @@ function buildOverlay() {
     if (e.target === overlay) closeOverlay();
   });
 
-  overlayEls = { overlay, img, pName, pPrice, pDesc };
+  overlayEls = { overlay, img, youtube, pName, pPrice, pDesc };
 }
 
 function openOverlay(item, rank, color) {
   if (!overlayEls) buildOverlay();
-  const { overlay, img, pName, pPrice, pDesc } = overlayEls;
+  const { overlay, img, youtube, pName, pPrice, pDesc } = overlayEls;
 
   overlay.style.setProperty("--heat", color);
 
@@ -155,6 +164,13 @@ function openOverlay(item, rank, color) {
   pDesc.querySelector("p").textContent = item.desc && item.desc.trim() ? item.desc : "No writeup yet.";
 
   overlay.classList.add("open");
+  if (item.youtube) {
+    youtube.src = `https://www.youtube.com/embed/${item.youtube}`;
+    youtube.style.display = "block";
+  } else {
+    youtube.src = "";
+    youtube.style.display = "none";
+  }
   document.body.classList.add("no-scroll");
 }
 
