@@ -32,6 +32,7 @@ const MISCLIST = [
   { name: "flower bankai",                                     game: "Type Soul", points: null,                 img: "images/flowerbankai.png",               youtube: "",          desc: "" }, 
   { name: "roaring knight (pre patch) (no mantle)",            game: "DELTARUNE",              points: null,    img: "images/prepatchroaringknightnomantle.png", youtube: "",    desc: "" },
   { name: "four man kingsfall",                                game: "Destiny 2",           points: null,       img: "images/4mankingsfall.png",              youtube: "",   desc: "" },
+  { name: "sans",                                              game: "UNDERTALE",         points: null, img: "",       desc: "" },
   { name: "daytime empress",                                   game: "Terraria",           points: null,        img: "images/daytimeempress.png",             youtube: "",        desc: "" },
   { name: "45/20",                                             game: "Ultimate Custom Night",     points: null, img: "images/4520.png",                       youtube: "",         desc: "" },
   { name: "Gauntlet of Strength: Shura",                       game: "Sekiro",      points: null,               img: "images/gauntletofstrength.png",         youtube: "", desc: "" },
