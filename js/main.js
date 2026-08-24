@@ -133,7 +133,15 @@ function buildOverlay() {
   const pDescInner = document.createElement("p");
   pDesc.appendChild(pDescInner);
 
-  content.append(close, img, youtube, pName, pPrice, pDesc);
+  const pVictor = document.createElement("div");
+  pVictor.id = "pVictor";
+  pVictor.className = "content-text";
+
+  const pVerifier = document.createElement("div");
+  pVerifier.id = "pVerifier";
+  pVerifier.className = "content-text"; 
+
+  content.append(close, img, youtube, pName, pPrice, pDesc, pVictor, pVerifier);
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
