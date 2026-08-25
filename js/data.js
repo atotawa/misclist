@@ -43,13 +43,4 @@ const MISCLIST = [
   { name: "malenia",                                           game: "Elden Ring",         points: null,        img: "", youtube: "",      desc: "" },
   { name: "solo prison",                                       game: "Dying Light",         points: null,       img: "", youtube: "",      desc: "" },
   { name: "roaring knight (hacked kris)",                      game: "DELTARUNE",         points: null,         img: "images/hackedknight.png",  youtube: "",     desc: "" },
-  
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
-  { name: "",                                           game: "",         points: null, img: "",       desc: "" },
 ];
