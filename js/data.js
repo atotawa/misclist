@@ -24,7 +24,7 @@ const MISCLIST = [
   { name: "3:22",                                              game: "Getting Over it",           points: null, img: "images/322.png",                        youtube: "",     desc: "" },
   { name: "Poltergeist",                                       game: "Geometry Dash",       points: null,       img: "images/poltergeist.png",                youtube: "LcGG14C_WIQ",      desc: "" },
   { name: "Pantheon 5",                                        game: "Hollow Knight",       points: null,       img: "images/pantheon5.png",                  youtube: "",       desc: "" },
-  { name: "no hit Roaring Knight",                             game: "DELTARUNE",         points: null, img: "",       desc: "" },
+  { name: "no hit Roaring Knight",                             game: "DELTARUNE",         points: null, img: "images/nohitknight.png",       desc: "" },
   { name: "P Rank P-2",                                        game: "Ultrakill",           points: null,       img: "images/p-2.png",                        youtube: "",        desc: "" },
   { name: "Masters",                                           game: "Overwatch",           points: null,       img: "images/masters.png",                    youtube: "",    desc: "" },
   { name: "jawbreaker/doubledash",                             game: "Geometry Dash",            points: null,  img: "images/jawbreakerxdoubledash.png",      youtube: "",  desc: "" },
