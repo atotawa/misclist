@@ -67,7 +67,7 @@ function buildRow(item, index, total) {
 
   const ptsEl = document.createElement("div");
   ptsEl.className = "row-points";
-  ptsEl.textContent = item.points === null || item.points === undefined ? "—" : item.points;
+  ptsEl.textContent = effectivePoints(item, rank);
 
   row.appendChild(rankEl);
   row.appendChild(thumbWrap);
@@ -135,13 +135,13 @@ function buildOverlay() {
 
   const pVictor = document.createElement("div");
   pVictor.id = "pVictor";
-  pVictor.className = "content-text";
+  pVictor.className = "content-text meta-line";
 
   const pVerifier = document.createElement("div");
   pVerifier.id = "pVerifier";
-  pVerifier.className = "content-text"; 
+  pVerifier.className = "content-text meta-line";
 
-  content.append(close, img, youtube, pName, pPrice, pDesc, pVictor, pVerifier);
+  content.append(close, img, youtube, pName, pPrice, pVerifier, pVictor, pDesc);
   overlay.appendChild(content);
   document.body.appendChild(overlay);
 
@@ -150,12 +150,12 @@ function buildOverlay() {
     if (e.target === overlay) closeOverlay();
   });
 
-  overlayEls = { overlay, img, youtube, pName, pPrice, pDesc };
+  overlayEls = { overlay, img, youtube, pName, pPrice, pDesc, pVerifier, pVictor };
 }
 
 function openOverlay(item, rank, color) {
   if (!overlayEls) buildOverlay();
-  const { overlay, img, youtube, pName, pPrice, pDesc } = overlayEls;
+  const { overlay, img, youtube, pName, pPrice, pDesc, pVerifier, pVictor } = overlayEls;
 
   overlay.style.setProperty("--heat", color);
 
@@ -168,8 +168,22 @@ function openOverlay(item, rank, color) {
   }
 
   pName.textContent = `#${rank} — ${item.name}`;
-  pPrice.textContent = `${item.game}  ·  ${item.points === null || item.points === undefined ? "points TBD" : item.points + " pts"}`;
+  pPrice.textContent = `${item.game}  ·  ${effectivePoints(item, rank)} pts`;
   pDesc.querySelector("p").textContent = item.desc && item.desc.trim() ? item.desc : "No writeup yet.";
+
+  if (item.verifier && item.verifier.trim()) {
+    pVerifier.textContent = `Verified by ${item.verifier}`;
+    pVerifier.style.display = "";
+  } else {
+    pVerifier.style.display = "none";
+  }
+
+  if (item.victors && item.victors.length) {
+    pVictor.textContent = `Also beaten by ${item.victors.join(", ")}`;
+    pVictor.style.display = "";
+  } else {
+    pVictor.style.display = "none";
+  }
 
   overlay.classList.add("open");
   if (item.youtube) {
