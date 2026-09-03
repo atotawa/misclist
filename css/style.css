@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap');
 
+@font-face {
+  font-family: ComicSans;
+  src: url(../fonts/comicsans.ttf);
+}
+
 :root {
   --bg: #15111a;
   --bg-alt: #1a141f;
@@ -39,7 +44,7 @@ body.no-scroll { overflow: hidden; }
 
 .header h2 {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: ComicSans;
   font-weight: 800;
   font-size: clamp(2.2rem, 5vw, 3rem);
   letter-spacing: 0.03em;

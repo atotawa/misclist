@@ -103,6 +103,17 @@ function buildRow(entry, index, total, color) {
   placeholder.textContent = initials(entry.name);
   thumbWrap.appendChild(placeholder);
 
+  const avatarSrc = typeof PLAYER_AVATARS !== "undefined" ? PLAYER_AVATARS[entry.name] : null;
+  if (avatarSrc) {
+    const im = document.createElement("img");
+    im.loading = "lazy";
+    im.alt = "";
+    im.src = avatarSrc;
+    im.onerror = () => { im.remove(); };
+    im.onload = () => { placeholder.style.display = "none"; };
+    thumbWrap.appendChild(im);
+  }
+
   const textEl = document.createElement("div");
   textEl.className = "row-text";
   const nameEl = document.createElement("div");
