@@ -23,4 +23,5 @@ const PLAYER_AVATARS = {
     "sphyss": "images/players/sphyss.jpg",
     "sojheart": "images/players/sojheart.png",
     "Onateri": "images/players/onateri.jpg",
+    // "tes": "images/players/",
 };
