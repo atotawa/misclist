@@ -21,7 +21,7 @@
 
 const VERIFIER_MULTIPLIER = 1.0;
 const VICTOR_MULTIPLIER = 0.9;
-const DECAY = 0.95;
+const DECAY = 0.90;
 
 function heatColor(index, total) {
   const t = total <= 1 ? 0 : index / (total - 1);
