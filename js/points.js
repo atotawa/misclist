@@ -25,7 +25,7 @@
 // difference between two things near the bottom.
 // -----------------------------------------------------------------------
 
-const POINTS_CURVE = { TOP: 1000, FLOOR: 100, DECAY: 0.91 };
+const POINTS_CURVE = { TOP: 1000, FLOOR: 100, DECAY: 0.95 };
 
 function curvePoints(rank) {
   const { TOP, FLOOR, DECAY } = POINTS_CURVE;
