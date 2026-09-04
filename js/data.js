@@ -51,6 +51,6 @@ const MISCLIST = [
   { name: "refraction railway 5",                              game: "Limbus Company",          points: null,   img: "images/rr5.png",                           youtube: "",         desc: " ", verifier: "Onateri", victors: [] },
   { name: "curse ending",                                      game: "Silksong",         points: null,          img: "",                                         youtube: "",      desc: " ", verifier: "atotawa", victors: ["Onateri", "demutrudu"] },
   { name: "malenia",                                           game: "Elden Ring",         points: null,        img: "",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: ["sphyss", "atotawa"] },
-  { name: "solo prison",                                       game: "Dying Light",         points: null,       img: "",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: [] },
+  { name: "solo prison",                                       game: "Dying Light",         points: null,       img: "images/soloprison.png",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: [] },
   { name: "roaring knight (hacked kris)",                      game: "DELTARUNE",         points: null,         img: "images/hackedknight.png",                  youtube: "",     desc: " ", verifier: "sphyss", victors: [] },
 ];
