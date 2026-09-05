@@ -52,5 +52,6 @@ const MISCLIST = [
   { name: "curse ending",                                      game: "Silksong",         points: null,          img: "",                                         youtube: "",      desc: " ", verifier: "atotawa", victors: ["Onateri", "demutrudu"] },
   { name: "malenia",                                           game: "Elden Ring",         points: null,        img: "",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: ["sphyss", "atotawa"] },
   { name: "solo prison",                                       game: "Dying Light",         points: null,       img: "images/soloprison.png",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: [] },
+  { name: "sotm speedrun",                                     game: "Secret of the Mimic",         points: null,       img: "",                                         youtube: "mnqim13n_OE",      desc: " ", verifier: "atotawa", victors: [] },
   { name: "roaring knight (hacked kris)",                      game: "DELTARUNE",         points: null,         img: "images/hackedknight.png",                  youtube: "",     desc: " ", verifier: "sphyss", victors: [] },
 ];
