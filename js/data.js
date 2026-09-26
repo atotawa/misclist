@@ -36,6 +36,7 @@ const MISCLIST = [
   { name: "Pantheon 5",                                        game: "Hollow Knight",       points: null,       img: "images/pantheon5.png",                     youtube: "",       desc: " ", verifier: "CoolChip", victors: [] },
   { name: "P Rank P-2",                                        game: "Ultrakill",           points: null,       img: "images/p-2.png",                           youtube: "",        desc: " ", verifier: "Onateri", victors: [] },
   { name: "Spelunky Hell Run",                                 game: "Spelunky 2",         points: null,        img: "images/spelunkyhell.png",                  youtube: "", desc: "",                                            verifier: "demutrudu", victors: [] },
+  { name: "calamity infernum (true melee)",                    game: "Terraria",         points: null,         img: "",                  youtube: "",     desc: " ", verifier: "Cr2zy", victors: [] },
   { name: "Masters",                                           game: "Overwatch",           points: null,       img: "images/masters.png",                       youtube: "",    desc: " ", verifier: "sojheart", victors: [] },
   { name: "Kaizo Knight /w Noelle and Mantle",                 game: "DELTARUNE",         points: null,         img: "",                                         youtube: "DRl-72BiLNQ",       desc: " ", verifier: "CoolChip", victors: [] },
   { name: "jawbreaker/doubledash",                             game: "Geometry Dash",            points: null,  img: "images/jawbreakerxdoubledash.png",         youtube: "",  desc: " ", verifier: "atotawa", victors: ["Onateri", "Cr2zy"] },
@@ -57,4 +58,5 @@ const MISCLIST = [
   { name: "solo prison",                                       game: "Dying Light",         points: null,       img: "images/soloprison.png",                                         youtube: "",      desc: " ", verifier: "Onateri", victors: [] },
   { name: "sotm speedrun",                                     game: "Secret of the Mimic",         points: null,       img: "",                                         youtube: "mnqim13n_OE",      desc: " ", verifier: "atotawa", victors: [] },
   { name: "roaring knight (hacked kris)",                      game: "DELTARUNE",         points: null,         img: "images/hackedknight.png",                  youtube: "",     desc: " ", verifier: "sphyss", victors: [] },
+  
 ];
