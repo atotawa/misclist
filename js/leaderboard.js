@@ -23,14 +23,24 @@ const VERIFIER_MULTIPLIER = 1.0;
 const VICTOR_MULTIPLIER = 0.9;
 const DECAY = 0.90;
 
+// Gradient stops, top rank to bottom rank
+const HEAT_STOPS = [
+  "#ffb783", // Lustrous
+  "#b9a6f5", // Radiant
+  "#9fdc9c", // Rhodium
+  "#5fd9e8", // Platinum
+  "#f5cf3d", // Gold
+  "#a9a3c4", // Silver
+  "#a07a60", // Bronze
+  "#8a8794", // Iron
+];
+
 function heatColor(index, total) {
-  const t = total <= 1 ? 0 : index / (total - 1);
-  const hueStart = 14;
-  const hueEnd = 255;
-  const hue = hueStart + (hueEnd - hueStart) * t;
-  const sat = 85 - t * 15;
-  const light = 58 - t * 8;
-  return `hsl(${hue.toFixed(0)}, ${sat.toFixed(0)}%, ${light.toFixed(0)}%)`;
+  const t = total <= 1 ? 0 : index / (total - 1); // 0 at top, 1 at bottom
+  const pos = t * (HEAT_STOPS.length - 1);
+  const i = Math.min(Math.floor(pos), HEAT_STOPS.length - 2);
+  const f = pos - i; // how far between stop i and stop i+1
+  return `color-mix(in oklab, ${HEAT_STOPS[i + 1]} ${(f * 100).toFixed(1)}%, ${HEAT_STOPS[i]})`;
 }
 
 function initials(str) {
