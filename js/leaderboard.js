@@ -20,7 +20,7 @@
 // -----------------------------------------------------------------------
 
 const VERIFIER_MULTIPLIER = 1.0;
-const VICTOR_MULTIPLIER = 0.9;
+const VICTOR_MULTIPLIER = 1.0;
 const DECAY = 0.90;
 
 // Gradient stops, top rank to bottom rank
