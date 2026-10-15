@@ -107,7 +107,7 @@ function buildRow(entry, index, total, color) {
   rankEl.textContent = "#" + rank;
 
   const thumbWrap = document.createElement("div");
-  thumbWrap.className = "row-thumb";
+  thumbWrap.className = "row-thumb player-thumb";
   const placeholder = document.createElement("div");
   placeholder.className = "row-thumb-placeholder";
   placeholder.textContent = initials(entry.name);

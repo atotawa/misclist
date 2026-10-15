@@ -170,6 +170,10 @@ body.no-scroll { overflow: hidden; }
   object-fit: fill;
 }
 
+.player-thumb img {
+  object-fit: cover;
+}
+
 .row-thumb-placeholder {
   position: absolute;
   inset: 0;
