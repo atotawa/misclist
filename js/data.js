@@ -4,7 +4,7 @@
 //
 // Fields:
 //   name        - achievement name
-//   game        - the game (or "IRL" for real-life feats)
+//   game        - the game name
 //   points      - leave as null and a value is auto-generated from this
 //                 achievement's position in the list (see js/points.js
 //                 for how, and to tune the curve). Set an explicit number
@@ -16,10 +16,10 @@
 //   desc        - longer description shown in the popup when a row is
 //                 clicked. Leave as "" if you haven't written one yet.
 //   verifier    - name of the person who first cleared this (string).
-//                 Leave as "" until known. Gets full points on the leaderboard.
+//                 Leave as "" until known.
 //   victors     - array of names of everyone else who's cleared it after
 //                 the verifier, e.g. ["Player2", "Player3"]. Order doesn't
-//                 matter. Each victor gets a slightly reduced point value
+//                 matter. Each victor gets the same point value
 //                 vs the verifier (see js/leaderboard.js to tune that).
 // -----------------------------------------------------------------------
 
