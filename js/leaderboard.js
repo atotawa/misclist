@@ -60,7 +60,7 @@ function addClear(players, name, value, achName, rank, role) {
 
 function buildPlayerClears() {
   const players = {};
-  MISCLIST.forEach((item, i) => {
+  ACTIVE_LIST.forEach((item, i) => {
     const rank = i + 1;
     const pts = effectivePoints(item, rank);
     if (item.verifier && item.verifier.trim()) {

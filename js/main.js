@@ -1,4 +1,4 @@
-// misclist rendering + modal logic
+// MISCLIST rendering + modal logic
 
 // Gradient stops, top rank to bottom rank
 const HEAT_STOPS = [
@@ -94,8 +94,8 @@ function buildRow(item, index, total) {
 function renderList() {
   const main = document.getElementById("main-div");
   main.innerHTML = "";
-  MISCLIST.forEach((item, i) => {
-    main.appendChild(buildRow(item, i, MISCLIST.length));
+  ACTIVE_LIST.forEach((item, i) => {
+    main.appendChild(buildRow(item, i, ACTIVE_LIST.length));
   });
 }
 
