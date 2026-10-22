@@ -74,7 +74,8 @@ body.no-scroll { overflow: hidden; }
   font-size: clamp(2.2rem, 5vw, 3rem);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text);
+  color: #ff5a36;
+  
 }
 
 .site-nav {
